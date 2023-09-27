@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <title>
+            CSS3 Selector Basic
+        </title>
+        <style>
+            /*후손 선택자*/
+            #header > h1{color:red;}/*자손 선택자(헤더 아이디 바로 아래 h1에만 적용)*/
+            #section h1{color: orange;}
+            .title{background-color: blue;}
+
+            /*반응 선택자*/
+            h1:hover{color:red;}/*커서 올려놓을 때*/
+            h1:active{color:blue;}/*버튼 클릭 할 때*/
+
+            /*상태 선택자*/
+            input:enabled{background-color:white;}/*input 태그 사용 가능*/
+            input:disabled{background-color: gray;}/*input 태그 사용 불가능*/
+            input:focus{background-color: orange;}/*input 태그 포커스*/
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1 class="title">Lorem ipsum</h1>
+            <div id="nav"> 
+                <h1>Navigation</h1>
+            </div>
+        </div>
+        <div id="section">
+            <h1 class="title">Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sir amet, consectetur adipiscing elit.</p>
+        </div>
+        <h1>반응 선택자</h1>
+
+        <h2>사용 가능</h2>
+        <input>
+        <h2>사용 불가능</h2>
+        <input disabled="disabled">
+    </body>
+</html>
