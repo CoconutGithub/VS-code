@@ -2,7 +2,6 @@
   margin: 0;
   border: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 body {
   padding: 0 20px;
@@ -25,7 +24,7 @@ nav {
   border: 2px solid gray;
   border-left: none;
   border-right: none;
-  margin: 40px 0;
+  margin: 30px 0;
 }
 nav ul {
   display: flex;
@@ -37,7 +36,6 @@ nav ul {
 nav ul li {
   padding: 5px 20px;
   color: gray;
-  height: 30px;
 }
 nav ul li:hover {
   color: black;
@@ -54,10 +52,10 @@ form {
   border: 1px solid gray;
   border-radius: 15px;
   display: flex;
+  height: 26px;
 }
 form input {
   padding:7px;
-  height: 26px;
 }
 
 form input:nth-child(1) {
