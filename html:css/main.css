@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 20px;
+}
+header {
+  padding: 40px 50px;
+}
+header h1{
+  font-size: 30px;
+}
+header h2 {
+  font-size: 15px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid gray;
+  padding: 5px 20px;
+
+  border-left: none;
+  border-right: none;
+  margin: 40px 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 30px;
+}
+nav ul li {
+  padding: 5px 20px;
+  color: gray;
+}
+nav ul li:hover {
+  color: black;
+  font-weight: 500;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li:hover ul {
+  display: flex;
+  position: absolute;
+}
+form {
+  border: 1px solid gray;
+  border-radius: 12px;
+  height: 26px;
+  display: flex;
+}
+form input {
+  padding: 7px;
+  height: 26px;
+  display: block;
+}
+form input:nth-child(1) {
+  border-radius: 12px 0 0 12px;
+}
+form input:nth-child(2) {
+  border-radius: 0 12px 12px 0;
+}
+
+article p {
+  font-size: 13px;
+}
+
+main section {
+  max-width: 80%;
+  float: left;
+}
+main section article:nth-child(1)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: gray;
+  margin: 20px 0;
+}
+main section article:nth-child(2)::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: gray;
+  margin: 20px 0;
+}
+aside {
+  float: right;
+}
+aside div ul li {
+  font-size: 15px;
+}
+aside div ul li a {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  text-align: center;
+}
+aside div ul li a:hover {
+  color: black;
+}
+
+aside div ul {
+  list-style: none;
+}
+
+footer {
+  clear: both;
+}
