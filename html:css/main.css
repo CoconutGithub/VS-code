@@ -15,15 +15,14 @@ header h1{
 }
 header h2 {
   font-size: 15px;
+  color: gray;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid gray;
-  padding: 5px 20px;
-
+  border: 2px solid gray;
   border-left: none;
   border-right: none;
   margin: 40px 0;
@@ -32,11 +31,13 @@ nav ul {
   display: flex;
   list-style: none;
   align-items: center;
-  height: 30px;
+  justify-content: center;
+  padding: 5px;
 }
 nav ul li {
   padding: 5px 20px;
   color: gray;
+  height: 30px;
 }
 nav ul li:hover {
   color: black;
@@ -51,29 +52,35 @@ nav ul li:hover ul {
 }
 form {
   border: 1px solid gray;
-  border-radius: 12px;
-  height: 26px;
+  border-radius: 15px;
   display: flex;
 }
 form input {
-  padding: 7px;
+  padding:7px;
   height: 26px;
-  display: block;
-}
-form input:nth-child(1) {
-  border-radius: 12px 0 0 12px;
-}
-form input:nth-child(2) {
-  border-radius: 0 12px 12px 0;
 }
 
+form input:nth-child(1) {
+  border-radius: 15px 0 0 15px;
+}
+form input:nth-child(2) {
+  border-radius: 0 15px 15px 0;
+}
+
+article h1{
+  font-size: 30px;
+  font-weight: 500;
+}
 article p {
   font-size: 13px;
 }
 
+main{
+  display: flex;
+}
+
 main section {
   max-width: 80%;
-  float: left;
 }
 main section article:nth-child(1)::after {
   content: '';
@@ -91,26 +98,22 @@ main section article:nth-child(2)::after {
   background: gray;
   margin: 20px 0;
 }
-aside {
-  float: right;
+aside h3{
+  font-weight: 500;
 }
-aside div ul li {
+aside ul li {
   font-size: 15px;
 }
-aside div ul li a {
+aside ul li a {
   text-decoration: none;
   color: gray;
   display: block;
   text-align: center;
 }
-aside div ul li a:hover {
+aside ul li a:hover {
   color: black;
 }
 
 aside div ul {
   list-style: none;
-}
-
-footer {
-  clear: both;
 }
